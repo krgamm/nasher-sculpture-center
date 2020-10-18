@@ -5,35 +5,96 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./style.css" />
     <title>Nasher Sculpture Center</title>
+    <link rel="icon" href="./icons/NSC-logo-square.svg">
   </head>
   <body>
     <!-- Navigation Links -->
     <nav>
-      <a href="./index.html"><img src="#" alt="logo" /></a>
-      <ul>
-        <li><a href="#plan-a-visit">Visit</a></li>
-        <li><a href="#upcoming-events">Upcoming Events</a></li>
-        <li><a href="#explore">Explore the Art</a></li>
-        <li><a href="#learn-more">Learn More</a></li>
-        <li><a href="#about">About</a></li>
+      <div id="logo-container"><a href="./index.html"><img class = "logo" src="./icons/NSC-logo-square.svg" alt="logo"></a></div>
+      <ul id = "nav-links">
+        <li><a href="#">Visit</a></li>
+        <li><a href="#">Programs and Events</a></li>
+        <li><a href="#">Art</a></li>
+        <li><a href="#">Explore and Learn</a></li>
+        <li><a href="#">About</a></li>
       </ul>
+        <div class="btn-group">
+        <a href="#"><button>Donate</button>
+        </a>
+        <a href="#"><button>Become a Member</button>
+        </a>
+      </div>
     </nav>
-
+<section id="hero" class="flex">
+ <div id ="hero-image" class="hero-text flex">
+   <hgroup class="flex"> <h1>Now Open!</h1>
+    <button>COVID-19 guidelines</button>
+  </hgroup>
+</div>
+</section>
     <!-- Container keeps each section at the same width -->
-    <div class="container">
-      <section id="plan-a-visit">
-        <h1>Plan A Visit</h1>
-      </section>
-      <section id="upcoming-events"><h1>Upcoming Events</h1></section>
-      <section id="explore">
-        <h1>Explore the Art</h1>
-        <div id="art-gallery"></div>
-      </section>
-      <section id="learn-more"><h1>Learn More</h1></section>
-      <section id="about"><h1>About</h1></section>
+    <div class="container flex">
+   <section id="featured-exhibit">
+     <h1>Featured Exhibit</h1>
+     <div id="featured-exhibit-content">
+       <div class="textblock flex"><h2>Exhibit title</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis beatae, praesentium eum explicabo facilis iste.</p>
+      <button>Learn More</button>
+      </div>
+     </div>
+   </section>
+<section id="news">
+  <h1 id="title">News</h1>
+  <div class="article-card flex">
+    <div class="date"><p>DEC<br>02</p>
+    </div>
+    <div class="divider"></div>
+    <div class="article-info">
+      <hgroup><h1>Title</h1>
+    <h2>Sub-title</h2></hgroup>
+  </div>
+  </div>
+  <div class="article-card flex">
+    <div class="date"><p>DEC<br>02</p>
+    </div>
+    <div class="divider"></div>
+    <div class="article-info">
+      <hgroup><h1>Title</h1>
+    <h2>Sub-title</h2></hgroup>
+  </div>
+  </div>
+  <div class="article-card flex">
+    <div class="date"><p>DEC<br>02</p>
+    </div>
+    <div class="divider"></div>
+    <div class="article-info">
+      <hgroup><h1>Title</h1>
+    <h2>Sub-title</h2></hgroup>
+  </div>
+  </div>
+  <div class="article-card flex">
+    <div class="date"><p>DEC<br>02</p>
+    </div>
+    <div class="divider"></div>
+    <div class="article-info">
+      <hgroup><h1>Title</h1>
+    <h2>Sub-title</h2></hgroup>
+  </div>
+  </div>
+</section>
+
+<section id="plan-visit">
+  <h1>Plan a Visit</h1>
+  <ul id="visit-cards-wrapper">
+    <li id="visit-1"><h1>Hours</h1></li>
+    <li id="visit-2"><h1>Admission</h1></li>
+    <li id="visit-3"><h1>Parking</h1></li>
+    <li id="visit-4"><h1>Nasher From Home</h1></li>
+  </ul>
+</section>
 
       <!-- Footer contains any extra info needed -->
-      <footer>
+      <!-- <footer>
         <address>
           <h6>Nasher Sculpture Center</h6>
           2001 Flora Street
@@ -42,19 +103,8 @@
           <br />
           <a href="tel:2142425100">214-242-5100</a>
         </address>
-        <div id="other-links">
-          <h6>Other Links</h6>
-          <ul>
-            <li><a href="#">Link 1</a></li>
-            <li><a href="#">Link 2</a></li>
-            <li><a href="#">Link 3</a></li>
-            <li><a href="#">Link 4</a></li>
-            <li><a href="#">Link 5</a></li>
-            <li><a href="#">Link 6</a></li>
-          </ul>
-        </div>
-      </footer>
-    </div>
+      </footer> -->
+
     <script src="./script.js"></script>
   </body>
 </html>
