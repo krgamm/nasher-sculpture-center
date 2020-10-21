@@ -31,6 +31,7 @@ html {
 body {
   font-family: "Ruhl", sans-serif;
   animation: opening 1s ease-in-out;
+  overflow-x: hidden;
 }
 h1 {
   font-size: var(--header1);
@@ -123,20 +124,24 @@ nav {
   background-image: url("./images/NasherSculpture_02.jpg");
   background-position: center;
   background-size: cover;
-  margin: 40px 0 25px 0;
+  margin: 40px 0 0 0;
 }
 
 #hero-image hgroup {
   background-color: white;
-  padding: 50px;
+  padding: 100px 150px;
   border-radius: 40px;
 }
 #hero-image button {
   margin: 0;
 }
 #featured-exhibit {
-  height: 80%;
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(82, 185, 71);
+  height: 80vh;
+  width: 100vw;
   padding-top: 30px;
 }
 #featured-exhibit h1 {
@@ -144,10 +149,11 @@ nav {
 }
 #featured-exhibit-content {
   position: relative;
-  margin: auto;
   background: url("./images/NasherSculpture_02.jpg");
   background-size: cover;
+  margin: 0 auto 0 auto;
   height: 500px;
+  max-width: 1240px;
   width: 100%;
   border-radius: 15px;
   box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.5);
@@ -173,7 +179,8 @@ p {
 }
 
 #news {
-  margin-top: 50px;
+  padding-top: 50px;
+  height: 80vh;
 }
 #news p {
   font-size: var(--header1);
@@ -215,6 +222,32 @@ p {
   margin: 20px;
 }
 
+#art-showcase {
+  padding-top: 50px;
+}
+#image-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1240px;
+  justify-content: center;
+  margin-top: 30px;
+}
+#image-gallery a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  overflow: hidden;
+  margin: 10px;
+}
+#image-gallery img {
+  position: absolute;
+  width: auto;
+  height: 150%;
+}
+
 #plan-visit {
   width: 100%;
   padding-top: 60px;
@@ -233,7 +266,6 @@ p {
   align-items: center;
   width: 500px;
   height: 200px;
-  background-color: red;
   margin: 40px 0;
   border-radius: 15px;
   padding: 20px;

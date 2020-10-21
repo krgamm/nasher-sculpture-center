@@ -6,17 +6,18 @@
     <link rel="stylesheet" href="./style.css" />
     <title>Nasher Sculpture Center</title>
     <link rel="icon" href="./icons/NSC-logo-square.svg">
+    <link rel="stylesheet" href="./lightbox.css">
   </head>
   <body>
     <!-- Navigation Links -->
     <nav>
       <div id="logo-container"><a href="./index.html"><img class = "logo" src="./icons/NSC-logo-square.svg" alt="logo"></a></div>
       <ul id = "nav-links">
-        <li><a href="#">Visit</a></li>
-        <li><a href="#">Programs and Events</a></li>
-        <li><a href="#">Art</a></li>
-        <li><a href="#">Explore and Learn</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="#featured-exhibit">Featured Exhibit</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#art-showcase">Art</a></li>
+        <li><a href="#plan-visit">Plan a Visit</a></li>
+        <li><a href="#about">About</a></li>
       </ul>
         <div class="btn-group">
         <a href="#"><button>Donate</button>
@@ -82,7 +83,31 @@
   </div>
   </div>
 </section>
-
+<section id="art-showcase">
+  <h1>Art Gallery</h1>
+  <div id="image-gallery">
+    <a href="./images/abstract-brass.jpg" data-lightbox="art-gallery"><img src="./images/abstract-brass.jpg" alt=""></a>
+    <a href="./images/abstract-field.jpg" data-lightbox="art-gallery"><img src="./images/abstract-field.jpg" alt=""></a>
+    <a href="./images/balloon-animal.jpg" data-lightbox="art-gallery"><img src="./images/balloon-animal.jpg" alt=""></a>
+    <a href="./images/black-sculpture.jpg" data-lightbox="art-gallery"><img src="./images/black-sculpture.jpg" alt=""></a>
+    <a href="./images/bronze-face.jpg" data-lightbox="art-gallery"><img src="./images/bronze-face.jpg" alt=""></a>
+    <a href="./images/bunny.jpg" data-lightbox="art-gallery"><img src="./images/bunny.jpg" alt=""></a>
+    <a href="./images/bust_monument_closeup.jpg" data-lightbox="art-gallery"><img src="./images/bust_monument_closeup.jpg" alt=""></a>
+    <a href="./images/dragon-green.jpg" data-lightbox="art-gallery"><img src="./images/dragon-green.jpg" alt=""></a>
+    <a href="./images/face.jpg" data-lightbox="art-gallery"><img src="./images/face.jpg" alt=""></a>
+    <a href="./images/giraffe.jpg" data-lightbox="art-gallery"><img src="./images/giraffe.jpg" alt=""></a>
+    <a href="./images/incased.jpg" data-lightbox="art-gallery"><img src="./images/incased.jpg" alt=""></a>
+    <a href="./images/juliet.jpg" data-lightbox="art-gallery"><img src="./images/juliet.jpg" alt=""></a>
+    <a href="./images/mountain-sprout.jpg" data-lightbox="art-gallery"><img src="./images/mountain-sprout.jpg" alt=""></a>
+    <a href="./images/plastic-bag.jpg" data-lightbox="art-gallery"><img src="./images/plastic-bag.jpg" alt=""></a>
+    <a href="./images/red-circle.jpg" data-lightbox="art-gallery"><img src="./images/red-circle.jpg" alt=""></a>
+    <a href="./images/red-faces.jpg" data-lightbox="art-gallery"><img src="./images/red-faces.jpg" alt=""></a>
+    <a href="./images/red-museum-suclpture.jpg" data-lightbox="art-gallery"><img src="./images/red-museum-suclpture.jpg" alt=""></a>
+    <a href="./images/underwater.jpg" data-lightbox="art-gallery"><img src="./images/underwater.jpg" alt=""></a>
+    <a href="./images/white-bust-on-wood.jpg" data-lightbox="art-gallery"><img src="./images/white-bust-on-wood.jpg" alt=""></a>
+    <a href="./images/white-bust.jpg" data-lightbox="art-gallery"><img src="./images/white-bust.jpg" alt=""></a>
+  </div>
+</section>
 <section id="plan-visit">
   <h1>Plan a Visit</h1>
   <ul id="visit-cards-wrapper">
@@ -94,7 +119,7 @@
 </section>
 
       <!-- Footer contains any extra info needed -->
-      <!-- <footer>
+      <footer>
         <address>
           <h6>Nasher Sculpture Center</h6>
           2001 Flora Street
@@ -103,8 +128,14 @@
           <br />
           <a href="tel:2142425100">214-242-5100</a>
         </address>
-      </footer> -->
+      </footer>
 
-    <script src="./script.js"></script>
+    <script src="./lightbox-plus-jquery.js">
+      lightbox.option({
+        'wrapAround': true,
+        'disableScrolling': true,
+        'alwaysShowNavOnTouchDevices': true
+      })
+    </script>
   </body>
 </html>
