@@ -149,8 +149,9 @@ nav {
 }
 #featured-exhibit-content {
   position: relative;
-  background: url("./images/NasherSculpture_02.jpg");
+  background: url("./images/black-sculpture.jpg");
   background-size: cover;
+  background-position: center;
   margin: 0 auto 0 auto;
   height: 500px;
   max-width: 1240px;
@@ -180,7 +181,7 @@ p {
 
 #news {
   padding-top: 50px;
-  height: 80vh;
+  height: auto;
 }
 #news p {
   font-size: var(--header1);
@@ -203,7 +204,7 @@ p {
   flex-direction: row;
   width: 30vw;
   height: 15%;
-  margin: 15px 0;
+  margin: 50px 0;
 }
 .article-info {
   display: flex;
